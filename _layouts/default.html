@@ -1,0 +1,56 @@
+---
+theme :
+  name : twitter
+---
+{% include JB/setup %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include themes/twitter/header.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Docs master nav -->
+    {% include themes/twitter/nav-main.html %}
+
+    <!-- Subhead
+	================================================== -->
+	<header class="jumbotron subhead" id="overview">
+	  <div class="container">
+	    <h1>{% if page.header %}{{ page.header }}{% elsif page.title %}{{ page.title }}{% endif %}</h1>
+	    <p class="lead">{% if page.lead %}{{ page.lead }}{% endif%}</p>
+	    {% if site.ads %}
+	    {% include JB/advertisement %}
+	    {% endif %}
+	  </div>
+	</header>
+
+	<div class="container">
+	    <!-- Docs nav
+	    ================================================== -->
+	    <div class="row">
+	      <div class="span3 bs-docs-sidebar">
+	        <ul class="nav nav-list bs-docs-sidenav">
+	          {% if page.slug == "getting-started" %}
+	          	{% include nav-getting-started.html %}
+	          {% elsif page.slug == "css" %}
+	          	{% include nav-css.html %}
+	          {% elsif page.slug == "components" %}
+	          	{% include nav-components.html %}
+	          {% elsif page.slug == "js" %}
+	          	{% include nav-javascript.html %}
+	          {% elsif page.slug == "customize" %}
+	          	{% include nav-customize.html %}
+	          {% endif %}
+	        </ul>
+	      </div>
+	      <div class="span9">
+	      	{{ content }}
+	      </div>
+	    </div>
+    </div>
+    <!-- Page content of course! -->
+    {% include themes/twitter/footer.html %}
+</body>
+</html>

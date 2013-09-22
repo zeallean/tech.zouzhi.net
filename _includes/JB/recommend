@@ -1,0 +1,10 @@
+{% if site.safe and site.JB.recommend.provider and page.JB.recommend != false %}
+
+{% case site.JB.recommend.provider %}
+{% when "ujian" %}
+  {% include JB/recommend-providers/ujian %}	
+{% when "custom" %}
+  {% include custom/sharing %}
+{% endcase %}
+
+{% endif %}

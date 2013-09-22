@@ -1,0 +1,40 @@
+---
+theme :
+  name : twitter
+---
+{% include JB/setup %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include themes/twitter/header.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Docs master nav -->
+    {% include themes/twitter/nav-main.html %}
+
+    {% if page.subhead %}
+    <!-- Subhead
+	================================================== -->
+	<header class="jumbotron subhead" id="overview">
+	  <div class="container">
+	    <h1>{% if page.header %}{{ page.header }}{% elsif page.title %}{{ page.title }}{% endif %}</h1>
+	    <p class="lead">{% if page.lead %}{{ page.lead }}{% endif%}</p>
+	    {% if site.ads %}
+	    {% include JB/advertisement %}
+	    {% endif %}
+	  </div>
+	</header>
+	{% endif %}
+	<div class="container">
+	    <div class="row">
+	    	<div class="span12">
+	      		{{ content }}
+	      	</div>
+	    </div>
+    </div>
+    <!-- Page content of course! -->
+    {% include themes/twitter/footer.html %}
+</body>
+</html>

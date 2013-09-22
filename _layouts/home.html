@@ -1,0 +1,22 @@
+---
+theme :
+  name : twitter
+---
+{% include JB/setup %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include themes/twitter/header.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Docs master nav -->
+    {% include themes/twitter/nav-main.html %}
+
+    <!-- Page content of course! -->
+    {{ content }}
+
+    {% include themes/twitter/footer.html %}
+  </body>
+</html>

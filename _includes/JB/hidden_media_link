@@ -1,0 +1,16 @@
+{% comment %}<!--
+The hidden_media_link include is a script for hidden the link that for all media.
+Usage:
+  1) include JB/hidden_media_link
+  example:
+  	  {% include JB/tags_list %}
+-->{% endcomment %}
+{% if site.JB.hidden_href != null and site.JB.hidden_href.hidden == true %}
+<script>
+      {% if site.JB.hidden_href.topic_key_words != null %}
+          {% for topic in site.JB.hidden_href.topic_key_words %}
+            $("div a:contains('{{ topic }}')").hide();
+          {% endfor %}
+      {% endif %}
+</script>
+{% endif %}
