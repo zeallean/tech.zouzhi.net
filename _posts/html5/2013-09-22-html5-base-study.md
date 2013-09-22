@@ -6,9 +6,7 @@ category: html5
 tags: [html5,web]
 ---
 ##html5--视频篇
-
 {% highlight html %}
-
 <div style="text-align:center;">
   <button onclick="playPause()">播放/暂停</button> 
   <button onclick="makeBig()">大</button>
@@ -20,8 +18,9 @@ tags: [html5,web]
 	<source src="/example/html5/mov_bbb.ogg" type="video/ogg" />
 	Your browser does not support HTML5 video.
   </video>
-</div> 
-	
+</div>
+{% endhighlight %}
+
 <script type="text/javascript">
 var myVideo=document.getElementById("video1");
 
@@ -48,7 +47,5 @@ function makeNormal()
 myVideo.width=420; 
 } 
 </script>
-
-{% endhighlight %}
 
 {% include JB/setup %}

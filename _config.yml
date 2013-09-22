@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 #permalink: /:categories/:year/:month/:day/:title 
 permalink: /:categories/:title 
-
+excerpt_separator: ""  # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
