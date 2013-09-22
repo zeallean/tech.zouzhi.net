@@ -6,6 +6,7 @@ category: html5
 tags: [html5,web]
 ---
 ##html5--视频篇
+
 {% highlight html %}
 
 <div style="text-align:center;">
