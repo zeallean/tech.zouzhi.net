@@ -46,7 +46,8 @@ myVideo.width=420;
 } 
 </script>
 
-`代码`
+`代码`  
+
 {% highlight html lineos %}
 <div style="text-align:center;">
   <button onclick="playPause()">播放/暂停</button> 
