@@ -43,8 +43,8 @@ tagline: 记录,分享,成长
 
     <div class="row-fluid">
       <div class="span4">
-        <a href="/html5/"><img class="marketing-img" src="http://dummyimage.com/370x145/ff6600/ffffff.png&amp;text=html5"></a>
-        <h2><a href="/git/gitsys/">HTML5.</a></h2>
+        <a href="/html5/html5-base-study"><img class="marketing-img" src="http://dummyimage.com/370x145/ff6600/ffffff.png&amp;text=html5"></a>
+        <h2><a href="/html5/html5-base-study">HTML5.</a></h2>
         <p>HTML5的时代即将到来,让我们张开怀抱开始迎接web3.0时代的到来吧.</p>
       </div>
       <div class="span4">
