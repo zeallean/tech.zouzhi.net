@@ -46,8 +46,7 @@ myVideo.width=420;
 } 
 </script>
 
-`代码`  
-
+`html代码`  
 {% highlight html lineos %}
 <div style="text-align:center;">
   <button onclick="playPause()">播放/暂停</button> 
@@ -61,7 +60,9 @@ myVideo.width=420;
 	Your browser does not support HTML5 video.
   </video>
 </div>
-
+{% endhighlight %}
+`javascript代码`  
+{% highlight javascript lineos %}
 <script type="text/javascript">
 var myVideo=document.getElementById("video1");
 
@@ -89,5 +90,4 @@ myVideo.width=420;
 } 
 </script>
 {% endhighlight %}
-
 {% include JB/setup %}
