@@ -103,7 +103,6 @@ HTML5新增了 video 元素来包含视频的标准方法.这个方法彻底摆�
 {% endhighlight %}
 `javascript代码`  
 {% highlight javascript linenos %}
-<script type="text/javascript">
   var myVideo=document.getElementById("video1");
 
   function playPause()
@@ -128,6 +127,5 @@ HTML5新增了 video 元素来包含视频的标准方法.这个方法彻底摆�
   { 
     myVideo.width=420; 
   } 
-</script>
 {% endhighlight %}
 {% include JB/setup %}
