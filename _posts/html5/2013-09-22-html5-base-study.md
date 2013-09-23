@@ -47,7 +47,7 @@ myVideo.width=420;
 </script>
 
 `html代码`  
-{% highlight html %}
+{% highlight html lineos %}
 <div style="text-align:center;">
   <button onclick="playPause()">播放/暂停</button> 
   <button onclick="makeBig()">大</button>
@@ -62,7 +62,7 @@ myVideo.width=420;
 </div>
 {% endhighlight %}
 `javascript代码`  
-{% highlight javascript %}
+{% highlight javascript lineos %}
 <script type="text/javascript">
 var myVideo=document.getElementById("video1");
 
