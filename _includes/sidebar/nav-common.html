@@ -1,0 +1,28 @@
+  <li class="nav-header"><h5>分类目录</h5></li>
+  <li class="divider"></li>
+  {% assign categories_list = site.categories %}
+  {% for category in categories_list %} 
+	<li
+	{% unless page.categories == empty %}
+		{% for cat in page.categories %}
+			{% if category[0] == cat %}
+			{{ 'class="active"' }}
+			{% endif %}
+		{% endfor %}
+	{% endunless %}
+	><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
+		{{ category[0] | join: "/" }}
+	</a></li>
+  {% endfor %}
+  {% assign categories_list = nil %}
+  <li class="nav-header"><h5>热门标签</h5></li>
+  <li class="divider"></li>
+  <li>
+  <ul class="tag_box inline">
+  {% assign tag_list = site.tags %}
+  {% for tag in tag_list %} 
+    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }}</a></li>
+  {% endfor %}
+  {% assign tags_list = nil %}
+  </ul>
+  </li>
