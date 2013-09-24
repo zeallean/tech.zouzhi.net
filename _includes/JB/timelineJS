@@ -1,11 +1,11 @@
 {% comment %}<!--
 The timelineJS include is a timeline slider helper.
 Usage:
-  1) assign the 'source_file' variable to a path_to_json/or_link_to_googlespreadsheet.
+  1) assign the 'timeline_config' variable to the timelineJS config arguments
   2) include JB/timelineJS
   example:
     <ul>
-  	  {% assign source_file = 'https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&output=html' %}
+  	  {% assign timeline_config = '{ width: "100%", height: "620", start_at_end: true, source: "https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html" }' %}
   	  {% include JB/timelineJS %}
   	</ul>
   	
@@ -18,19 +18,28 @@ Usage:
 {% if site.JB.timelineJS.provider == "custom" %}
   {% include custom/timelineJS %}
 {% else %}
-  {% if source_file %}
-    <div id="timeline-embed"></div>
+  {% if timeline_config %}
+    <div id="timeline-embed"> </div>
       <script type="text/javascript">
+      try{
+        var cus_config = {{ timeline_config }};
+      }catch(e){
+        console.log('timeline-config error');
+        var cus_config = { width: "100%", height: "550", start_at_end: true, source: "https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html" };
+      }
+        var embed_path = '{{ ASSET_PATH }}/bootstrap/js/timeline/';
         var timeline_config = {
-         width: "100%",
-         height: "600",
+         width: (cus_config.width ? cus_config.width : "100%"),
+         height: (cus_config.height ? cus_config.height : "550"),
          hash_bookmark: true,
-         start_at_end: true,
-         start_zoom_adjust: 0,
+         start_at_end: (cus_config.start_at_end ? cus_config.start_at_end : true),
+         start_zoom_adjust: 1,
          lang: 'zh-cn',
-         source: '{{ source_file }}',
-         css: '/assets/themes/twitter/bootstrap/js/timeline/css/timeline.css',     //OPTIONAL PATH TO CSS
-         js:  '/assets/themes/twitter/bootstrap/js/timeline/js/timeline-min.js'
+         font: (cus_config.font ? cus_config.font : 'SansitaOne-Kameron'),
+         source: (cus_config.source ? cus_config.source : "{{ source_file }}"),
+         embed_id: 'timeline-embed',
+         css: '{{ ASSET_PATH }}/bootstrap/js/timeline/css/timeline.css',
+         js:  '{{ ASSET_PATH }}/bootstrap/js/timeline/js/timeline-min.js'
         }
       </script>
   {% endif %}

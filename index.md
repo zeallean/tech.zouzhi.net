@@ -39,7 +39,7 @@ tagline: 记录,分享,成长
     <p class="marketing-byline">
     追击互联网热点话题,投入学习... 用我的style开始我的study-line
     </p>
-    {% assign source_file = 'https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html' %}
+    {% assign timeline_config = '{ width: "100%", height: "520", start_at_end: true, source: "https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html" }' %}
     {% include JB/timelineJS %}
     <hr class="soften">
   </div>
