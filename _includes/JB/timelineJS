@@ -1,0 +1,38 @@
+{% comment %}<!--
+The timelineJS include is a timeline slider helper.
+Usage:
+  1) assign the 'source_file' variable to a path_to_json/or_link_to_googlespreadsheet.
+  2) include JB/timelineJS
+  example:
+    <ul>
+  	  {% assign source_file = 'https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&output=html' %}
+  	  {% include JB/timelineJS %}
+  	</ul>
+  	
+  FileSource: (optional): 
+  	assign the 'source_file' variable to path_to_json/or_link_to_googlespreadsheet.
+  	
+    This helper can be seen in use at: ../_post/index.md
+-->{% endcomment %}
+
+{% if site.JB.timelineJS.provider == "custom" %}
+  {% include custom/timelineJS %}
+{% else %}
+  {% if source_file %}
+    <div id="timeline-embed"></div>
+      <script type="text/javascript">
+        var timeline_config = {
+         width: "100%",
+         height: "600",
+         hash_bookmark: true,
+         start_at_end: true,
+         start_zoom_adjust: 0,
+         lang: 'zh-cn',
+         source: '{{ source_file }}',
+         css: '/assets/themes/twitter/bootstrap/js/timeline/css/timeline.css',     //OPTIONAL PATH TO CSS
+         js:  '/assets/themes/twitter/bootstrap/js/timeline/js/timeline-min.js'
+        }
+      </script>
+  {% endif %}
+{% endif %}
+{% assign source_file = nil %}
