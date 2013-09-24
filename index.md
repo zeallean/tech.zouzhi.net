@@ -10,7 +10,7 @@ tagline: 记录,分享,成长
     <h1><a href="/"><img src="/assets/img/logo.png" title="zozorz.com"/></a></h1>
     <p>好记性不如烂笔头,记录,分享,成长</p>
     <p>
-      <a href="/categories.html" class="btn btn-warning btn-large">学习笔记</a>
+      <a href="/categories.html" class="btn btn-success btn-large">学习笔记</a>
     </p>
     <ul class="masthead-links">
       <li>
