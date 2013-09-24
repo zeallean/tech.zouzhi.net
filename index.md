@@ -39,7 +39,7 @@ tagline: 记录,分享,成长
     <p class="marketing-byline">
     追击互联网热点话题,投入学习... 用我的style开始我的study-line
     </p>
-    <iframe src='http://embed.verite.co/timeline/?source=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;font=Georgia-Helvetica&amp;maptype=watercolor&amp;lang=zh-cn&amp;height=750' width='100%' height='750' frameborder='0'> </iframe>
+    <iframe src='http://embed.verite.co/timeline/?source=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;font=Georgia-Helvetica&amp;maptype=watercolor&amp;lang=zh-cn&amp;height=550' width='100%' height='550' frameborder='0'> </iframe>
     <hr class="soften">
   </div>
 </div>
