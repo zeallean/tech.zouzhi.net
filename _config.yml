@@ -82,7 +82,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : duoshuo
     disqus :
       short_name : zozorz
     livefyre :
@@ -96,6 +96,8 @@ JB :
       colorscheme: light
     uyan :
       uid : 1518134
+    duoshuo:
+      uid : zozorz
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
