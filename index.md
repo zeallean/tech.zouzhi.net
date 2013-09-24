@@ -33,36 +33,20 @@ tagline: 记录,分享,成长
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="marketing">
-
-    <h1>热门分享</h1>
+    <h1>Study-Line</h1>
     <p class="marketing-byline">
-    追击互联网热点话题,投入学习...
-      </p>
-
-    <div class="row-fluid">
-      <div class="span4">
-        <a href="/html5/html5-base-study"><img class="marketing-img" src="http://dummyimage.com/370x145/ff6600/ffffff.png&amp;text=html5"></a>
-        <h2><a href="/html5/html5-base-study">HTML5.</a></h2>
-        <p>HTML5的时代即将到来,让我们张开怀抱开始迎接web3.0时代的到来吧.</p>
-      </div>
-      <div class="span4">
-        <img class="marketing-img" src="http://dummyimage.com/370x145/66CC00/ffffff.png&amp;text=CSS3">
-        <h2>CSS3</h2>
-        <p>CSS3,让那些陈旧的browser见鬼去吧^_^</p>
-      </div>
-      <div class="span4">
-        <img class="marketing-img" src="http://dummyimage.com/370x145/FF3300/ffffff.png&amp;text=Hadoop">
-        <h2>Hadoop</h2>
-        <p>大数据的时代已经到来,hadoop没听过,云计算没听过? 你out了!!</p>
-      </div>
-    </div>
-
+    追击互联网热点话题,投入学习... 用我的style开始我的study-line
+    </p>
+    <iframe src='http://embed.verite.co/timeline/?source=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;font=Georgia-Helvetica&amp;maptype=watercolor&amp;lang=zh-cn&amp;height=750' width='100%' height='750' frameborder='0'> </iframe>
     <hr class="soften">
-
+  </div>
+</div>
+<div class="container">
     <h1>更多精彩分享.</h1>
     <p class="marketing-byline">生命不息,折腾不止,我们还有很多可以做的.向上吧,骚年!</p>
+    <div class="row-fluid">
     <pre>
       TODO:
       node.js,
@@ -70,12 +54,8 @@ tagline: 记录,分享,成长
       设计模式
       ... 
     </pre>
-    <div class="row-fluid">
-      <ul class="thumbnails example-sites">
-        
-      </ul>
-     </div>
-  </div>
+      <ul class="thumbnails example-sites"></ul>
+    </div>
 </div>
 
 

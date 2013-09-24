@@ -3,10 +3,11 @@ layout: post
 title: "html5入门学习"
 tagline: "HTML5的时代即将到来,让我们张开怀抱开始迎接web3.0时代的到来吧"
 category: html5
-tags: [html5,web]
+tags: ['html5基础',web]
 slug: html5
 ---
-<h2 id="video">html5--视频篇</h2>
+<section id="video">
+##html5--视频篇
 HTML5新增了 video 元素来包含视频的标准方法.这个方法彻底摆脱flash,页面照样可以正常嵌入视频为了见,是不是很酷!!  
 以下是各个浏览器版本对相应的视频格式支持情况:  
 
@@ -128,4 +129,5 @@ HTML5新增了 video 元素来包含视频的标准方法.这个方法彻底摆�
     myVideo.width=420; 
   } 
 {% endhighlight %}
+</section>
 {% include JB/setup %}
