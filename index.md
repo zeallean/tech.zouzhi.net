@@ -27,7 +27,10 @@ tagline: 记录,分享,成长
   <div class="container">
     <ul class="bs-docs-social-buttons">
       <li class="follow-btn">
-        <a href="http://weibo.com/u/1946129050?s=6uyXnP" target="_blank"><img border="0" src="/assets/img/Sina_Weibo_Logo_RGB_C_E.png"/></a>
+        <a href="http://weibo.com/u/1946129050?s=6uyXnP" target="_blank"><img border="0" src="/assets/img/Sina_Weibo_Logo_RGB_C_E.png" height="34px"/></a>
+      </li>
+      <li class="follow-btn">
+        <a href="https://plus.google.com/106097479552219420754" target="_blank"><img border="0" src="/assets/img/googleplus_color.png"/></a>
       </li>
     </ul>
   </div>
