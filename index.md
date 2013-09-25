@@ -10,7 +10,7 @@ tagline: 记录,分享,成长
     <h1><a href="/"><img src="/assets/img/logo.png" title="zozorz.com"/></a></h1>
     <p>好记性不如烂笔头,记录,分享,成长</p>
     <p>
-      <a href="/categories.html" class="btn btn-warning btn-large">学习笔记</a>
+      <a href="/categories.html" class="btn btn-success btn-large">学习笔记</a>
     </p>
     <ul class="masthead-links">
       <li>
@@ -27,7 +27,10 @@ tagline: 记录,分享,成长
   <div class="container">
     <ul class="bs-docs-social-buttons">
       <li class="follow-btn">
-        <a href="http://weibo.com/u/1946129050?s=6uyXnP" target="_blank"><img border="0" src="/assets/img/Sina_Weibo_Logo_RGB_C_E.png"/></a>
+        <a href="http://weibo.com/u/1946129050?s=6uyXnP" target="_blank"><img border="0" src="/assets/img/Sina_Weibo_Logo_RGB_C_E.png" height="34px"/></a>
+      </li>
+      <li class="follow-btn">
+        <a href="https://plus.google.com/106097479552219420754" target="_blank"><img border="0" src="/assets/img/googleplus_color.png"/></a>
       </li>
     </ul>
   </div>
@@ -39,7 +42,7 @@ tagline: 记录,分享,成长
     <p class="marketing-byline">
     追击互联网热点话题,投入学习... 用我的style开始我的study-line
     </p>
-    {% assign source_file = 'https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html' %}
+    {% assign timeline_config = '{ width: "100%", height: "520", start_at_end: true, source: "https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html" }' %}
     {% include JB/timelineJS %}
     <hr class="soften">
   </div>
