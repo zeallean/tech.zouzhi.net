@@ -8,7 +8,7 @@ tagline: 记录,分享,成长
 <div class="jumbotron masthead">
   <div class="container">
     <h1><a href="/"><img src="/assets/img/logo.png" title="zozorz.com"/></a></h1>
-    <p>好记性不如烂笔头,记录,分享,成长</p>
+    <p>记录,分享,留住生活中的感动</p>
     <p>
       <a href="/categories.html" class="btn btn-success btn-large">学习笔记</a>
     </p>
@@ -38,9 +38,9 @@ tagline: 记录,分享,成长
 
 <div class="container-fluid">
   <div class="marketing">
-    <h1>Study-Line</h1>
+    <h1>学习之路</h1>
     <p class="marketing-byline">
-    追击互联网热点话题,投入学习... 用我的style开始我的study-line
+    关注互联网前沿技术,投入学习... 用我的Style开始我的StudyLife
     </p>
     {% assign timeline_config = '{ width: "100%", height: "520", start_at_end: true, source: "https://docs.google.com/spreadsheet/pub?key=0AoBfTlhssqnidEtBSjJ4ZHpqNFBudTRYbFVYOUhkTWc&amp;output=html" }' %}
     {% include JB/timelineJS %}
@@ -48,18 +48,13 @@ tagline: 记录,分享,成长
   </div>
 </div>
 <div class="container">
-    <h1>更多精彩分享.</h1>
-    <p class="marketing-byline">生命不息,折腾不止,我们还有很多可以做的.向上吧,骚年!</p>
+  <div class="marketing">
+    <h1>TODO MORE.</h1>
+    <p class="marketing-byline">生命不息,折腾不止,我想我们还有很多可以做,也有很多要去做.Just Do It!</p>
     <div class="row-fluid">
-    <pre>
-      TODO:
-      node.js,
-      敏捷开发,
-      设计模式
-      ... 
-    </pre>
-      <ul class="thumbnails example-sites"></ul>
+      <div class="span4"> </div>
     </div>
+  </div>
 </div>
 
 

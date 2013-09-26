@@ -50,7 +50,7 @@
     $('.popover-test').popover()
 
     // popover demo
-    $("a[data-toggle=popover]")
+    $("a[data-toggle=popover],img[data-toggle=popover]")
       .popover()
       .click(function(e) {
         e.preventDefault()
@@ -69,88 +69,22 @@
     // carousel demo
     $('#myCarousel').carousel()
 
-    // javascript build logic
-    var inputsComponent = $("#components.download input")
-      , inputsPlugin = $("#plugins.download input")
-      , inputsVariables = $("#variables.download input")
+    //for to top
 
-    // toggle all plugin checkboxes
-    $('#components.download .toggle-all').on('click', function (e) {
-      e.preventDefault()
-      inputsComponent.attr('checked', !inputsComponent.is(':checked'))
-    })
+    $('#bakToTop').click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 120);
+    });
 
-    $('#plugins.download .toggle-all').on('click', function (e) {
-      e.preventDefault()
-      inputsPlugin.attr('checked', !inputsPlugin.is(':checked'))
-    })
-
-    $('#variables.download .toggle-all').on('click', function (e) {
-      e.preventDefault()
-      inputsVariables.val('')
-    })
-
-    // request built javascript
-    $('.download-btn .btn').on('click', function () {
-
-      var css = $("#components.download input:checked")
-            .map(function () { return this.value })
-            .toArray()
-        , js = $("#plugins.download input:checked")
-            .map(function () { return this.value })
-            .toArray()
-        , vars = {}
-        , img = ['glyphicons-halflings.png', 'glyphicons-halflings-white.png']
-
-    $("#variables.download input")
-      .each(function () {
-        $(this).val() && (vars[ $(this).prev().text() ] = $(this).val())
-      })
-
-      $.ajax({
-        type: 'POST'
-      , url: /\?dev/.test(window.location) ? 'http://localhost:3000' : 'http://bootstrap.herokuapp.com'
-      , dataType: 'jsonpi'
-      , params: {
-          js: js
-        , css: css
-        , vars: vars
-        , img: img
-      }
-      })
-    })
+    $backToTopFun = function() {
+        var st = $(document).scrollTop(), winh = $(window).height();
+        (st > winh*0.5) ? $('#bakToTop').show(): $('#bakToTop').hide();
+        (st > winh*0.8) ? $('#bakToTop').addClass('back-to-top-active') : $('#bakToTop').removeClass('back-to-top-active');
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+            $('#bakToTop').css("top", st + winh - 166);
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+     $backToTopFun();
   })
-
-// Modified from the original jsonpi https://github.com/benvinegar/jquery-jsonpi
-$.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
-  var url = opts.url;
-
-  return {
-    send: function(_, completeCallback) {
-      var name = 'jQuery_iframe_' + jQuery.now()
-        , iframe, form
-
-      iframe = $('<iframe>')
-        .attr('name', name)
-        .appendTo('head')
-
-      form = $('<form>')
-        .attr('method', opts.type) // GET or POST
-        .attr('action', url)
-        .attr('target', name)
-
-      $.each(opts.params, function(k, v) {
-
-        $('<input>')
-          .attr('type', 'hidden')
-          .attr('name', k)
-          .attr('value', typeof v == 'string' ? v : JSON.stringify(v))
-          .appendTo(form)
-      })
-
-      form.appendTo('body').submit()
-    }
-  }
-})
-
 }(window.jQuery)
