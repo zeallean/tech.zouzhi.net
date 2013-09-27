@@ -52,7 +52,43 @@ tagline: 记录,分享,成长
     <h1>TODO MORE.</h1>
     <p class="marketing-byline">生命不息,折腾不止,我想我们还有很多可以做,也有很多要去做.Just Do It!</p>
     <div class="row-fluid">
-      <div class="span4"> </div>
+    <ul class="thumbnails">
+            <li class="span4">
+              <ul class="thumbnails">
+                <li class="span7 bt-thumbnail"><img data-src="holder.js/220x150/main-45/text:湾" alt="zozorz"></li>
+                <li class="span5 bt-thumbnail"><img data-src="holder.js/180x150/green-45/text:玩" alt="zozorz"></li>
+                <li class="span6 bt-thumbnail" style="margin-left:0"><img data-src="holder.js/200x180/orange-45/text:碗" alt="zozorz"></li>
+                <li class="span6 bt-thumbnail"><img data-src="holder.js/200x180/blue-45/text:腕" alt="zozorz"></li>
+              </ul>
+            </li>
+            <li class="span6">
+                <div class="bt-thumbnail">
+                <div id="douban-radio">
+                  <iframe src='http://douban.fm/partner/baidu/doubanradio' width='420' height='180' frameborder='0'> </iframe>
+                </div>
+                </div>
+            </li>
+            <li class="span2">
+              <a href="#" class="bt-thumbnail">
+                <img data-src="holder.js/160x180/pink-25/text:NodeJS" alt="nodejs">
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="bt-thumbnail">
+                <img data-src="holder.js/258x145/social-30/text:敏捷开发" alt="敏捷开发">
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="bt-thumbnail">
+                <img data-src="holder.js/258x145/industrial-30/text:设计模式" alt="设计模式">
+              </a>
+            </li>
+            <li class="span2">
+              <a href="#" class="bt-thumbnail">
+                <img data-src="holder.js/160x145/grey/text:更多期待.." alt="期待">
+              </a>
+            </li>
+      </ul>
     </div>
   </div>
 </div>
