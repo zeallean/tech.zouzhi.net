@@ -1,31 +1,10 @@
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
-window.addEventListener('DOMContentLoaded', function() {
-    $("body").queryLoader2({
-        barColor: "#6e6d73",
-        backgroundColor: "#fff1b0",
-        percentage: true,
-        barHeight: 1,
-        completeAnimation: "grow",
-        minimumTime: 100
-    });
-});
 
 !function ($) {
 
   $(function(){
-
-    //query Loader
-    $("body").queryLoader2({
-        barColor: "#6e6d73",
-        backgroundColor: "#663399",
-        percentage: true,
-        barHeight: 1,
-        completeAnimation: "fade",
-        minimumTime: 100
-    });
-
     var $window = $(window)
 
     // Disable certain links in docs

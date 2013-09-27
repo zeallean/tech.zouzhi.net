@@ -321,7 +321,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   padding-left: 0;
 }
 
-.footer .qrcode{
+img.qrcode{
+  width:150px;
   position:absolute;
   bottom:3px;
   left:10px;
