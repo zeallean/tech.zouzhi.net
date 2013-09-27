@@ -55,10 +55,10 @@ tagline: 记录,分享,成长
     <ul class="thumbnails">
             <li class="span4">
               <ul class="thumbnails">
-                <li class="span7 bt-thumbnail"><img data-src="holder.js/220x150/main-45/text:湾" alt="zozorz"></li>
-                <li class="span5 bt-thumbnail"><img data-src="holder.js/180x150/green-45/text:玩" alt="zozorz"></li>
-                <li class="span6 bt-thumbnail" style="margin-left:0"><img data-src="holder.js/200x180/orange-45/text:碗" alt="zozorz"></li>
-                <li class="span6 bt-thumbnail"><img data-src="holder.js/200x180/blue-45/text:腕" alt="zozorz"></li>
+                <li class="span6 bt-thumbnail"><img data-src="holder.js/200x165/main-45/text:湾" alt="zozorz"></li>
+                <li class="span6 bt-thumbnail"><img data-src="holder.js/200x165/green-45/text:玩" alt="zozorz"></li>
+                <li class="span6 bt-thumbnail" style="margin-left:0"><img data-src="holder.js/200x165/orange-45/text:碗" alt="zozorz"></li>
+                <li class="span6 bt-thumbnail"><img data-src="holder.js/200x165/blue-45/text:腕" alt="zozorz"></li>
               </ul>
             </li>
             <li class="span6">
