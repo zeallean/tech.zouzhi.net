@@ -321,6 +321,31 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   padding-left: 0;
 }
 
+.footer .qrcode{
+  position:absolute;
+  bottom:3px;
+  left:10px;
+  cursor:pointer;
+}
+
+.back-to-top,.back-to-top-active{
+  background-image:url('/assets/img/toTop.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width:50px;
+  height:50px;
+  position:fixed;
+  _position: absolute;
+  bottom:30px;
+  _bottom: "auto";
+  right:10px;
+  cursor: pointer;
+  z-index:9999;
+}
+
+.back-to-top-active{
+  background-position: -50px 0;
+}
 
 
 /* Special grid styles

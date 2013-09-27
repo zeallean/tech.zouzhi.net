@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<title>滚动新闻的形式显示内容「jTicker」</title>
+		<link rel="stylesheet" type="text/css" href="css.css" media="all" />
+		<script type="text/javascript" charset="utf-8" src="http://ijquery.360sites.cn/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="http://ijquery.360sites.cn/js/jquery.jticker.js"></script>
+		<script>
+			$(function () {
+				$('#jticker').ticker({
+					cursorList: ' ',
+					rate: 40,
+					delay: 4000
+				}).trigger('play');
+				
+				$('.next').live('click', function(){
+					$('#jticker').trigger({
+						type: 'play'
+					});
+					return false;
+				});
+			});
+			
+		</script>
+	</head>
+	
+	<body>
+		
+		<div id="header">
+			<h1>滚动新闻的形式显示内容「jTicker」</h1>
+		</div>
+		
+		<div class="container">
+			<div id="container">
+				
+				<div id="jticker">
+					<div>
+						<p>滚动新闻的形式显示内容「jTicker」</p>
+						<a class="next" href="#">next</a>
+					</div>
+					<div>
+						<p>点击「next」链接后，显示下一段内容。</p>
+						<a class="next" href="#">next</a>
+					</div>
+					<div>
+						<p>最后的内容显示完后，再点击「next」链接则返回最开始的一段。</p>
+						<a class="next" href="#">next</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+		
+	</body>
+</html>
