@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>开启一个全新的音乐世界</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css"/>
+<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/js/buttons/css/font-awesome.min.css"/>
+<!-- font-awesome for ie 7, for IE6-7 support of HTML5 elements -->
+<!--[if lt IE 7]>
+  <link rel="stylesheet" href="/assets/themes/twitter/bootstrap/js/buttons/css/font-awesome-ie7.min.css"/>
+<![endif]-->
+<link rel="stylesheet" href="/assets/themes/twitter/bootstrap/js/buttons/css/buttons.css"/>
+<style>
+		*{margin:0;padding:0}
+        body{overflow:hidden;}
+        #raout{ width:420px; height:186px; position:absolute;top:54%;left:50%}
+        #rain{ width:420px; height:186px; position:relative;top:-100px;left:-50%; background-color:#cfcfcf;text-align: center}
+        .radio-button{width:420px; height:186px;background-image:url('/assets/img/radio-bg.png');}
+        #rain .button-wrap{margin-top:20px;}
+        #rain a{text-decoration: none; color:#000;font-size:10px;}
+        #rain .stop-radio{ width:40px; height:26px; padding-top:3px; background-color:#909090; position:absolute; left:28px; bottom:0px;}
+</style>
+</head>
+<body>
+	<div id="raout">
+    <div id="rain">
+    <div class="radio-button">
+       <span class="button-wrap"><a href="javascript:void(0)" id="play" class="button grow button-circle button-primary"><i class="icon-play"></i></a></span>
+    </div>
+       <iframe style="display:none;" id="douban-radio" src='' width='420' height='180' frameborder='0'> </iframe>
+       <span style="display:none;" class="stop-radio"><a href="javascript:void()" id="stop" title="停止播放"><i class="icon-stop" title="停止播放"> </i></a></span>
+    </div>
+</div>
+	<script src="/assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/assets/themes/twitter/bootstrap/js/buttons/js/buttons.js"></script>
+	<script>
+	$(document).ready(function(){
+		var douban_url = 'http://douban.fm/partner/baidu/doubanradio';
+		$('#play').click(function(){
+			$('#douban-radio').attr('src',douban_url);
+			var iframe = document.getElementById('douban-radio');
+			if(iframe.attachEvent){
+				iframe.attachEvent("onload",function(){
+					$('#douban-radio').show();
+				});
+			}else{
+				iframe.onload = function(){
+					$('#douban-radio').show();
+				}
+			}
+			$('.radio-button').hide();
+			$('.stop-radio').show();
+		});
+
+		$('#stop').click(function(){
+			$('.radio-button').show();
+			$('#douban-radio').attr('src','');
+			$('#douban-radio').hide();
+			$('.stop-radio').hide();
+		});
+
+	})
+	</script>
+</body>
+</html>

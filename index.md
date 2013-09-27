@@ -61,10 +61,10 @@ tagline: 记录,分享,成长
                 <li class="span6 bt-thumbnail"><img data-src="holder.js/200x165/blue-45/text:腕" alt="zozorz"></li>
               </ul>
             </li>
-            <li class="span6">
+            <li class="span6 hidden-phone visible-desktop">
                 <div class="bt-thumbnail">
                 <div id="douban-radio">
-                  <iframe src='http://douban.fm/partner/baidu/doubanradio' width='420' height='180' frameborder='0'> </iframe>
+                  <iframe src='/radio.html' width='420' height='180' frameborder='0'> </iframe>
                 </div>
                 </div>
             </li>
